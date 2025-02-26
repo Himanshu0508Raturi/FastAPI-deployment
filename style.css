@@ -1,0 +1,27 @@
+.logo {
+  width: 100px;
+  height: auto;
+}
+.head-div {
+  background-color: #eee;
+}
+nav {
+  padding-top: 5%;
+}
+nav ul {
+  display: inline;
+}
+nav ul a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+.login-div {
+  padding-top: 3%;
+}
+.head-img img {
+  width: 100%;
+  height: 600px;
+  
+}
