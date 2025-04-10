@@ -4,8 +4,8 @@ import joblib
 import numpy as np
 
 # Load the model and scaler
-model = joblib.load("Iris API/Naive_bayes_model.pkl")
-scaler = joblib.load("Iris API/minmax_scaler.pkl")
+model = joblib.load("iris_api/Naive_bayes_model.pkl")
+scaler = joblib.load("iris_api/minmax_scaler.pkl")
 
 # Create the FastAPI app (must be named `app`)
 app = FastAPI()
