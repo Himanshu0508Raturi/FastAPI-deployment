@@ -1,8 +1,0 @@
-### Dependencies 
-streamlit
-joblib
-pandas
-scikit-learn
-pydantic
-fastapi
-uvicorn
