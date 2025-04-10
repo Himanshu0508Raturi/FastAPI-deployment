@@ -25,7 +25,7 @@ def get_name(name: str):
 #4 prediction functionality
 # make a prediction from the passed JSON data and return the predicted species
 @application.post('/predict')
-def predict_species(data:Irispara):
+def predict_species(data:Iris API/Irispara.py):
     # Convert input to NumPy array
     input_data = np.array([[data.SepalLengthCm, data.SepalWidthCm, data.PetalLengthCm, data.PetalWidthCm]])
 
