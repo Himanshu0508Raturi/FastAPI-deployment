@@ -1,8 +1,8 @@
 ### Dependencies 
-streamlit
-joblib
-pandas
-scikit-learn
-pydantic
 fastapi
 uvicorn
+joblib
+scikit-learn
+numpy
+pydantic
+
