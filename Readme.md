@@ -1,6 +1,6 @@
 # FastAPI Deployment
 
-Welcome to the **FastAPI Deployment** repository! This project demonstrates best practices for deploying a FastAPI application, including environment setup, running locally, and deployment to production.
+Welcome to the **FastAPI Deployment** repository! This project demonstrates best practices for deploying a FastAPI application, including environment setup, running locally, and deployment.
 
 ## Table of Contents
 
@@ -10,8 +10,6 @@ Welcome to the **FastAPI Deployment** repository! This project demonstrates best
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running Locally](#running-locally)
-- [Deployment](#deployment)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -19,12 +17,11 @@ Welcome to the **FastAPI Deployment** repository! This project demonstrates best
 
 ## About
 
-This repository provides a sample FastAPI application along with scripts and configurations to facilitate deployment. The goal is to make it easy to get started with FastAPI and to deploy it using modern DevOps practices.
+This repository provides a sample FastAPI application along with scripts and configurations to facilitate deployment. The goal is to make it easy to get started with FastAPI and to deploy it.
 
 ## Features
 
 - 🚀 FastAPI application setup
-- 🐳 Docker integration for containerization
 - 🧪 Environment-based configuration
 - ♻️ Production-ready deployment examples
 - 📦 Dependency management with `requirements.txt`
@@ -36,7 +33,6 @@ This repository provides a sample FastAPI application along with scripts and con
 
 - Python 3.8+
 - [pip](https://pip.pypa.io/en/stable/)
-- [Docker](https://www.docker.com/) for containerization
 
 ### Installation
 
@@ -66,39 +62,6 @@ uvicorn main:app --reload
 - Open your browser and navigate to [http://localhost:8000](http://localhost:8000)
 - Access the interactive docs at [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## Deployment
-
-This repo includes configurations for deploying with Docker or directly to popular cloud providers.
-
-### Docker
-
-1. **Build the Docker image:**
-   ```bash
-   docker build -t fastapi-deployment .
-   ```
-2. **Run the container:**
-   ```bash
-   docker run -d -p 8000:8000 fastapi-deployment
-   ```
-
-### Production Deployment
-
-- For production, consider using a WSGI server like Gunicorn with Uvicorn workers.
-- Use environment variables to manage secrets and settings.
-- Deploy using CI/CD workflows (example: GitHub Actions).
-
-## Project Structure
-
-```
-FastAPI-deployment/
-│
-├── app/                # Application source code
-│   └── main.py         # Main FastAPI app
-├── requirements.txt    # Python dependencies
-├── Dockerfile          # Docker configuration
-├── .env.example        # Example environment variables
-└── README.md           # Project documentation
-```
 
 ## Contributing
 
